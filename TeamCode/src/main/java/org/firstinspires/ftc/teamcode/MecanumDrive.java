@@ -30,10 +30,11 @@ public class MecanumDrive extends LinearOpMode {
             double denominator = Math.max(sumOfDrivePlusStrafePlusTurn, 1); // used in making all of the powers smaller
 
             // Rotate the movement direction counter to the bot's rotation
-            double driveRotation = drive * Math.cos(-robotHeading) - strafe * Math.sin(-robotHeading);
-            double strafeRotation = drive * Math.sin(-robotHeading) + strafe * Math.cos(-robotHeading);
+            double driveRotation = drive * Math.cos(-robotHeading) + strafe * Math.sin(-robotHeading);
+            double strafeRotation = drive * -Math.sin(-robotHeading) + strafe * Math.cos(-robotHeading);
 
             driveRotation = driveRotation * 1.1;  // Counteract imperfect strafing
+            //you calculate this after you denominator leading to > 1 power
 
             // defines motors for use
             Robot.frontLeft.setPower((driveRotation + strafeRotation + turn) / denominator);
