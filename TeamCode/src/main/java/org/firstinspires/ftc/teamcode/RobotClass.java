@@ -19,6 +19,7 @@ public class RobotClass {
             frontRight = hardwareMap.get(DcMotorEx.class, "frontRight");
             BackLeft = hardwareMap.get(DcMotorEx.class, "BackLeft");
             BackRight = hardwareMap.get(DcMotorEx.class, "BackRight");
+            //TODO: Why are the Back motors capitalized?
 
             frontLeft.setDirection(DcMotorSimple.Direction.REVERSE);
             frontRight.setDirection(DcMotorSimple.Direction.REVERSE);
@@ -31,7 +32,6 @@ public class RobotClass {
                     RevHubOrientationOnRobot.UsbFacingDirection.BACKWARD));
             // Without this, the REV Hub's orientation is assumed to be logo up / USB forward
             imu.initialize(parameters);
-
         }
 
 }
