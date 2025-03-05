@@ -42,8 +42,9 @@ public class MecanumDrive extends LinearOpMode {
             //TODO: strafeRotation is the X AXIS and should be: X_AXIS_VARIABLE (strafe) * Math.cos(-robotHeading) - Y_AXIS_VARIABLE (drive) * Math.sin(-robotHeading)
 
             driveRotation = driveRotation * 1.1;  // Counteract imperfect strafing
-            //TODO: I know they put it in the wiki but don't just throw lines of code in that you aren't sure of what they do. This only makes strafing more aggressive and
-            // possibly is not useful. Write the ideal code and then correct for hardware issues; don't future proof.
+            //TODO: I know they put it in the wiki but don't just throw lines of code in that you aren't sure of what they do.
+            // The intended purpose is to make strafing more aggressive to adjust for the increased motor friction when strafing.
+            // but your code is adjusting the Y-AXIS power which is not helpful. Try to understand what code is intended for before implementing, with some exceptions of course.
 
             Robot.frontLeft.setPower((driveRotation + strafeRotation + turn) / denominator);
             Robot.frontRight.setPower((driveRotation - strafeRotation + turn) / denominator); // strafe is negative because of the wheels orientation
