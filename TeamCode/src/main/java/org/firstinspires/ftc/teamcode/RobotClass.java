@@ -18,7 +18,8 @@ public class RobotClass {
             backLeft = hardwareMap.get(DcMotorEx.class, "backLeft");
             backRight = hardwareMap.get(DcMotorEx.class, "backRight");
 
-            frontLeft.setDirection(DcMotorSimple.Direction.REVERSE);
+            // robot configuration for test chassis
+            backRight.setDirection(DcMotorSimple.Direction.REVERSE);
             frontRight.setDirection(DcMotorSimple.Direction.REVERSE);
 
             // Retrieve the IMU from the hardware map
