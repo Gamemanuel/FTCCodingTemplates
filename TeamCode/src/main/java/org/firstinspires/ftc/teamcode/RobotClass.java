@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.hardware.IMU;
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 
 public class RobotClass {
-        public DcMotorEx frontLeft, frontRight, BackRight, BackLeft;
+        public DcMotorEx frontLeft, frontRight, backRight, backLeft;
 
         public IMU imu;
 
@@ -17,9 +17,8 @@ public class RobotClass {
             // configures your robot so that the program can interact with it
             frontLeft = hardwareMap.get(DcMotorEx.class, "frontLeft");
             frontRight = hardwareMap.get(DcMotorEx.class, "frontRight");
-            BackLeft = hardwareMap.get(DcMotorEx.class, "BackLeft");
-            BackRight = hardwareMap.get(DcMotorEx.class, "BackRight");
-            //TODO: Why are the Back motors capitalized?
+            backLeft = hardwareMap.get(DcMotorEx.class, "backLeft");
+            backRight = hardwareMap.get(DcMotorEx.class, "backRight");
 
             frontLeft.setDirection(DcMotorSimple.Direction.REVERSE);
             frontRight.setDirection(DcMotorSimple.Direction.REVERSE);
