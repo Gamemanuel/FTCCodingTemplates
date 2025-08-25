@@ -8,7 +8,7 @@ This is a Template for programing projects in FTC built by Gavin Rappleye and Wi
 - 6 wheel
 
  <div class="alert">
-  <strong>Note:</strong> the robotconfig.java file is set up for our practice bots. If you plan on using it you must edit the robotconfig.java file
+  <strong>Note:</strong> the <code>robotconfig.java</code> file is set up for our practice bots. If you plan on using it you must edit the <code>robotconfig.java</code> file
 </div>
 
 ## Installation
@@ -23,3 +23,4 @@ Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
