@@ -38,7 +38,6 @@ public class MecanumDrive extends LinearOpMode {
             double denominator = Math.max(maxMotorPower, 1); // used in making all of the powers smaller
 
             //calculate the denominator after you do the matrix rotation. It should be the last thing you calculate after you manipulate all the variables (Put these two line after line 38)
-            //FIX YOUR VARIABLE NAMES maxMotorPower is an intermediate variable and can definitely be shortened to just 'maxMotorPower' or something.
             // Naming variables should help describe what they are used for not just what they contain. I can see that it is the sunOfDrivePlusStrafePlusTurn but why is that?
 
             //I know they put it in the wiki but don't just throw lines of code in that you aren't sure of what they do.
