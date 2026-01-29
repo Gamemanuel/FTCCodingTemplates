@@ -13,7 +13,7 @@ public class MecanumAutoTest extends LinearOpMode {
     public void runOpMode() throws InterruptedException {
         waitForStart();
         cmd.moveAtAngle(0.5, 0, 1000); // straight forward
-        sleep(1000); //sleep makes the program pause whatever its doing for the specified milliseconds
+        sleep(1000);
         cmd.moveAtAngle(0.5, 180, 1000); // straight backward
         sleep(1000); //1000 milliseconds : 1 second
         cmd.moveAtAngle(0.5, 90, 1000); // strafe right

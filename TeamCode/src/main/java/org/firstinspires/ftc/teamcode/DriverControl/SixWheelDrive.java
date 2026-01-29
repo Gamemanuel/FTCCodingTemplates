@@ -10,8 +10,7 @@ import org.firstinspires.ftc.teamcode.Subsystems.Drivetrain;
 public class SixWheelDrive extends OpMode{
     Drivetrain drivetrain;
     boolean usingTankDrive = false; //easy switch between tank drive and arcade drive
-    //tank drive: left_stick_y is used for forward and back for the left side, same for right_stick_y and right side
-    //arcade drive: left_stick_y is used for forward and back for both sides, right_stick_x is used for turning
+    // Difference between arcade drive and tank drive is explained below
 
     public void init() { // called once when INIT is pressed
         //hardware mapping from driver hub

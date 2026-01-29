@@ -26,7 +26,8 @@ public class MecanumCMD {
     }
 
     /**
-     * Moves at an angle without changing orientation. See <a href="https://www.desmos.com/calculator/5ojthrrdf7">Controller angles</a>
+     * Moves at an angle without changing orientation.
+     * @see <a href="https://www.desmos.com/calculator/5ojthrrdf7">Controller angles</a>
      * @param power Power of motors
      * @param degrees Direction in degrees
      * @param time For how long

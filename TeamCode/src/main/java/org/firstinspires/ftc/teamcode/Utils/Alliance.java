@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.Utils;
 
 /**
  * This is an important tool to only have to update 1 file per teleop/auto.<br>
@@ -8,7 +8,8 @@ package org.firstinspires.ftc.teamcode;
  * <li>put all your commands in there</li>
  * <li>when it comes to alliance dependent things, use the current alliance</li>
  * </ul>
- * How to pass in alliance into master file:
+ * How to pass in alliance into master file:<br><br>
+ * <small>TeleOpBlue.java</small>
  * <pre><code>
  *public class TeleOpBlue extends TeleOp {
  *     public TeleOpBlue() {
@@ -16,19 +17,19 @@ package org.firstinspires.ftc.teamcode;
  *     }
  * }
  * </code></pre>
- * This passes in the alliance to the master teleop file.<br>
- * And then in the master file:
- * <pre><code>
- * turretSubsystem = new TurretSubsystem(hardwareMap, alliance);
- * </code></pre>
- * I pass in my alliance to my subsytems<br><br>
- * Make sure to configure your master file so that it you can pass in alliance:
+ * <small>TeleOp.java</small>
  * <pre><code>
  *     public TeleOp(Alliance alliance) {
  *         this.alliance = alliance;
  *     }
  * </code></pre>
- *
+ * This passes alliance into TeleOp.java (my master file)<br>
+ * And then in the master file:<br><br>
+ * <small>TeleOp.java</small>
+ * <pre><code>
+ * turretSubsystem = new TurretSubsystem(hardwareMap, alliance);
+ * </code></pre>
+ * I pass in my alliance to my subsystems<br><br>
  */
 public enum Alliance {
     RED, BLUE, ANY

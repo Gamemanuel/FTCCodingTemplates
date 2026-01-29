@@ -22,7 +22,8 @@ public class SixWheelCMD {
         setMotors(0,0);
     }
     /**
-     * A basic command that sets the motors to a specified power. Beware that it won't stop until said to.
+     * A basic command that sets the motors to a specified power. Beware that it won't stop until
+     * said to.
      *
      * @Creator Will (Finch)
      * @param left left side of drivetrain
