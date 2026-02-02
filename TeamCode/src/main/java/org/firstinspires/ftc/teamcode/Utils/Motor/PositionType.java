@@ -9,6 +9,6 @@ package org.firstinspires.ftc.teamcode.Utils.Motor;
  * <code>LEADER</code>: Gets the position of the Leader.<br>
  * <code>FOLLOWER</code>: Gets the position of the Follower
  */
-public enum positionType {
+public enum PositionType {
         AVERAGE, LEADER, FOLLOWER
 }
