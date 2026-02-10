@@ -69,9 +69,7 @@ public class MotorGroup {
      * Sets the behavior for how MotorGroup gets encoder position.
      * @see PositionType
      */
-    public void setPositionType(PositionType type) {
-        positionType = type;
-    }
+    public void setPositionType(PositionType type) { positionType = type; }
 
     /**
      * @return The position of the MotorGroup. Dependent on {@link PositionType}.

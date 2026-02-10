@@ -1,7 +1,6 @@
 package org.firstinspires.ftc.teamcode.Subsystems;
 
 import com.qualcomm.robotcore.hardware.DcMotorEx;
-import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.teamcode.Commands.SixWheelCMD;
@@ -21,8 +20,8 @@ public class Drivetrain {
         leftSide = new MotorGroup(
                 frontLeft,
                 backLeft,
-                DcMotorSimple.Direction.REVERSE,
-                DcMotorSimple.Direction.REVERSE
+                DcMotorEx.Direction.REVERSE,
+                DcMotorEx.Direction.REVERSE
         );
 
         // Right side of the robot
@@ -31,8 +30,8 @@ public class Drivetrain {
         rightSide = new MotorGroup(
                 frontRight,
                 backRight,
-                DcMotorSimple.Direction.FORWARD,
-                DcMotorSimple.Direction.REVERSE
+                DcMotorEx.Direction.FORWARD,
+                DcMotorEx.Direction.REVERSE
         );
     }
 
