@@ -16,8 +16,7 @@ public class JoystickEx {
     double joystickYAxis;
 
     /**
-     * Sets the JoystickEx<br>
-     * This one specifically is if you want to check a whole joystick instead of one axis<hr>
+     * Sets the JoystickEx
      * @param joystickXAxis The X axis of the joystick
      * @param joystickYAxis The Y axis of the joystick
      */
@@ -50,17 +49,6 @@ public class JoystickEx {
     }
 
     /**
-     * Returns the input. This one is <b>ONLY</b> works if you set only a single axis.
-     */
-    public double get() {
-        if (joystickAxis < Math.abs(deadzone)) {
-            return 0;
-        } else {
-            return joystickAxis;
-        }
-    }
-
-    /**
      * @return the coordinates of the joystick: {x, y}
      */
     public double[] getCoordinates() {
@@ -72,6 +60,6 @@ public class JoystickEx {
      */
     public double getAngle() { return Math.atan2(accountDeadzone(joystickYAxis),accountDeadzone(joystickXAxis)); }
     public double getAngleDeg() {
-        return Math.atan2(accountDeadzone(joystickYAxis),accountDeadzone(joystickXAxis)) * 180/Math.PI;
+        return getAngle() * 180/Math.PI;
     }
 }
