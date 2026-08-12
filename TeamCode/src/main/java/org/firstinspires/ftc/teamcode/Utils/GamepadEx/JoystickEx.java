@@ -56,6 +56,20 @@ public class JoystickEx {
     }
 
     /**
+     * @return the X axis
+     */
+    public double getXAxis() {
+        return accountDeadzone(joystickXAxis);
+    }
+
+    /**
+     * @return the Y axis
+     */
+    public double getYAxis() {
+        return accountDeadzone(joystickYAxis);
+    }
+
+    /**
      * @return the angle (in radians) the controller is at
      */
     public double getAngle() { return Math.atan2(accountDeadzone(joystickYAxis),accountDeadzone(joystickXAxis)); }
